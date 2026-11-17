@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VulnX</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <div>
+                <p class="eyebrow">SECURITY LAB</p>
+                <h1>VulnX</h1>
+                <p class="subtitle">Website Vulnerability Investigator</p>
+            </div>
+            <button id="runAssessment">Run assessment</button>
+        </header>
+
+        <section class="grid three-up">
+            <div class="card">
+                <p>Total assessments</p>
+                <h2 id="totalAssessments">0</h2>
+            </div>
+            <div class="card">
+                <p>Vulnerabilities</p>
+                <h2 id="vulnerabilities">0</h2>
+            </div>
+            <div class="card">
+                <p>High severity</p>
+                <h2 id="highSeverity">0</h2>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3>Latest findings</h3>
+            <ul id="findingsList" class="findings-list"></ul>
+        </section>
+    </div>
+
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container narrow">
+        <h1>Assessment</h1>
+        <form id="assessmentForm">
+            <label>
+                Mode
+                <select id="mode">
+                    <option value="vulnerable">Northstar Investigation</option>
+                    <option value="hardened">Hardened comparison</option>
+                </select>
+            </label>
+            <button type="submit">Start assessment</button>
+        </form>
+        <pre id="assessmentOutput">Awaiting start...</pre>
+    </div>
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>
